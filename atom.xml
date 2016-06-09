@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-06-09T06:47:28.000Z</updated>
+  <updated>2016-06-09T03:30:19.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,22 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>ReactiveCocoa</title>
-    <link href="http://yoursite.com/2016/06/09/ReactiveCocoa/"/>
-    <id>http://yoursite.com/2016/06/09/ReactiveCocoa/</id>
-    <published>2016-06-09T06:47:27.000Z</published>
-    <updated>2016-06-09T06:47:28.000Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Hello Pikdays</title>
