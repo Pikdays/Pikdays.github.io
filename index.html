@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XX App 技术支持</title>
+    <title>XX App 支持中心</title>
     <style>
         /* 基础样式 */
         * {
@@ -38,7 +38,7 @@
             border-bottom: 2px solid #0071e3;
         }
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         .faq-item {
             margin-bottom: 15px;
@@ -93,13 +93,52 @@
         .back-to-top.visible {
             opacity: 1;
         }
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .nav a {
+            color: #0071e3;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .nav a:hover {
+            background-color: #e8f5fe;
+        }
+        .privacy-section {
+            line-height: 1.8;
+        }
+        .privacy-section h3 {
+            color: #0071e3;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .privacy-section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>XX App 技术支持</h1>
+        <h1>XX App 支持中心</h1>
         
-        <div class="section">
+        <!-- 导航菜单 -->
+        <div class="nav">
+            <a href="#faq">常见问题</a>
+            <a href="#usage">使用说明</a>
+            <a href="#privacy">隐私政策</a>
+            <a href="#contact">联系我们</a>
+            <a href="#changelog">更新日志</a>
+        </div>
+        
+        <div class="section" id="faq">
             <h2>常见问题解答</h2>
             <div class="faq-item">
                 <div class="faq-question">Q：为什么App无法保存本地文件？</div>
@@ -138,7 +177,7 @@
             </div>
         </div>
         
-        <div class="section">
+        <div class="section" id="usage">
             <h2>使用说明</h2>
             <p>XX App是一款纯本地运行的工具类应用，所有数据均存储于设备本地，不涉及任何网络传输。主要功能包括：</p>
             <ul style="margin-left: 20px; margin-top: 10px;">
@@ -149,7 +188,63 @@
             <p style="margin-top: 15px;">使用时无需联网，也不会收集任何个人信息，请放心使用。</p>
         </div>
         
-        <div class="section contact">
+        <!-- 隐私政策部分 -->
+        <div class="section privacy-section" id="privacy">
+            <h2>隐私政策</h2>
+            <h3>一、引言</h3>
+            <p>本隐私政策适用于“XX App”（以下简称“本App”）。本App为纯本地工具类应用，<strong>不涉及任何网络连接或数据上传功能</strong>，所有数据处理均在用户设备本地完成。我们严格遵守《苹果App Store隐私政策规范》及相关法律法规，确保用户清晰了解数据处理方式。</p>
+            
+            <h3>二、我们不收集的信息</h3>
+            <ol>
+                <li><strong>无个人身份信息收集</strong>：本App无需用户注册或登录，因此不收集姓名、手机号、邮箱、身份证号等任何个人身份信息。</li>
+                <li><strong>无网络数据收集</strong>：因本App完全离线运行，不获取IP地址、设备网络状态等与网络相关的数据，也不产生任何联网行为（如数据上传、云端同步）。</li>
+            </ol>
+            
+            <h3>三、本地权限与数据处理</h3>
+            <ol>
+                <li><strong>设备权限说明（仅当App需要时）</strong>：
+                    <ul>
+                        <li><strong>存储权限</strong>：若App需要保存用户编辑的文件（如文档、图片），仅用于在设备本地存储，数据不会通过网络传输至任何服务器。</li>
+                        <li><strong>相机/麦克风权限</strong>（如有）：仅用于本地拍摄或录音，内容直接保存至设备相册，不进行任何远程传输或处理。</li>
+                        <li><strong>位置权限</strong>：若App无地图相关功能，明确说明“本App不获取用户位置信息”；若有本地天气等功能，说明“仅读取设备本地缓存的天气数据，不联网获取实时位置”。</li>
+                    </ul>
+                </li>
+                <li><strong>本地数据类型</strong>：
+                    <ul>
+                        <li>仅存储用户主动输入的内容（如备忘录文字、手绘图案）或设备本地文件（如用户导入的图片），所有数据均为用户主动提供且仅用于本地功能。</li>
+                        <li>无自动收集行为：本App不通过传感器、日志文件等方式自动获取用户行为数据或设备信息。</li>
+                    </ul>
+                </li>
+            </ol>
+            
+            <h3>四、数据存储与安全</h3>
+            <ol>
+                <li><strong>存储方式</strong>：所有数据存储于用户设备本地（如手机内存、SD卡），我们无法通过任何方式远程访问或控制这些数据。用户删除App时，本地数据将自动完全清除。</li>
+                <li><strong>安全措施</strong>：本地数据通过设备系统自带的加密机制（如iOS数据保护）进行保护，不额外传输或存储至第三方服务器。</li>
+            </ol>
+            
+            <h3>五、数据共享与披露</h3>
+            <ol>
+                <li><strong>第三方共享</strong>：因本App无网络功能，我们无法将用户数据共享给任何第三方（包括广告商、分析工具或其他组织）。隐私政策中不存在“数据上传”“云端同步”等描述。</li>
+                <li><strong>法律披露（极小概率场景）</strong>：如遇司法机关强制要求披露用户信息，我们会在法律允许范围内尽力保护用户隐私，但此类情况仅涉及设备本地存储的信息，且需通过合法程序获取。</li>
+            </ol>
+            
+            <h3>六、用户权利</h3>
+            <ol>
+                <li><strong>数据管理</strong>：
+                    <ul>
+                        <li>用户可通过App内“设置”功能删除本地缓存数据（如临时文件、编辑记录）；</li>
+                        <li>卸载App时，所有本地数据将自动永久删除，无法恢复。</li>
+                    </ul>
+                </li>
+                <li><strong>权限管理</strong>：用户可随时通过设备“设置-应用权限”关闭本App的存储、相机等权限，关闭后仅影响本地功能使用（如无法保存文件），不影响其他应用或网络服务。</li>
+            </ol>
+            
+            <h3>七、隐私政策更新</h3>
+            <p>若本App功能发生变化（如新增本地功能需申请权限），我们会在App启动时以弹窗形式通知用户更新后的政策，用户继续使用即视为同意新条款。政策更新不涉及网络传输，仅在本地设备展示。</p>
+        </div>
+        
+        <div class="section contact" id="contact">
             <h2>联系我们</h2>
             <p>如果您在使用过程中遇到其他问题，可通过以下方式联系开发者：</p>
             <p>📧 <a href="mailto:support@example.com">support@example.com</a></p>
@@ -157,9 +252,10 @@
             <p>我们会在1-3个工作日内回复您的咨询。</p>
         </div>
         
-        <div class="section">
+        <div class="section" id="changelog">
             <h2>更新日志</h2>
             <p>2025年6月24日 - 首次发布技术支持页面</p>
+            <p>2025年6月25日 - 新增隐私政策部分</p>
         </div>
     </div>
     
@@ -193,6 +289,22 @@
                     answer.style.display = 'block';
                 } else {
                     answer.style.display = 'none';
+                }
+            });
+        });
+        
+        // 平滑滚动到锚点
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 }
             });
         });
